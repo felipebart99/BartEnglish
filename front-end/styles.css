@@ -1,0 +1,284 @@
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #52719d; 
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+header ul{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+header ul li a:hover{
+    color:rgba(0, 0, 0, 0.501);
+}
+header ul li a img{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    
+}
+#home{
+    padding-top: 80px;
+}
+.custom-bg {
+    background-color: #1d5cca3d; /* exemplo de cor personalizada */
+}
+.menu-toggle {
+    display: none; /* Esconde o botão por padrão */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header h1{
+    color: #fff;
+    font-size: x-large;
+}
+.nav-link{
+    color: #fff;
+}
+
+#feedbacks{
+    background-color: 
+}
+#feedbacks h1{
+    color: #C8102E;
+}
+
+#feedbacks img{
+    width: 40px;
+    height: 40px;
+}
+.title {
+    color: #C8102E; /* Cor do texto */
+    font-weight: bold; /* Torna o texto em negrito, opcional */
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; /* Adiciona uma borda preta ao texto */
+}
+
+.description {
+    font-size: 0.8em; /* Diminui o tamanho da fonte do texto após os dois-pontos */
+    color: white; /* Define uma cor de texto padrão, se necessário */
+}
+article{
+    min-height: 390px;
+}
+article h2{
+    color: #1E3A5F;
+}
+h1 {
+    color: #C8102E; /* Red */
+}
+
+.btn {
+    background-color: #C8102E;
+    color: #fff;
+    padding: 15px;
+    font-size: large;
+}
+.btn1 {
+    font-size: x-large;
+    color: #fff;
+    width: 40%;
+    background-color: #0baa45;
+}
+.btn:hover {
+    background-color: #e61236; /* Darker Red */
+}
+.btn1:hover {
+    color: #fff;
+    background-color: #1aca5b;
+}
+
+footer {
+    background-color: #1E3A5F;
+    color: #fff;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E3A5F;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.skills ul li {
+    font-size: x-large;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #fff;
+}
+#about{
+    margin: 0 auto;
+    height: 500px;
+}
+#about img{
+    width: 600px;
+    height: 300px;  
+}
+.about p{
+    height: 250px;
+}
+
+#whatsapp-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: #25d366;
+border: none;
+cursor: pointer;
+z-index: 9999;
+}
+
+#whatsapp-button img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+border-radius: 2rem;
+}
+.contact-form {
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #1E3A5F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    width: 500px;
+}
+.contact-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #e61236;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+.contact-form button {
+    background-color: #e61236;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #1EBE70;
+}
+.flag-icon {
+    width: 48px;
+    height: 48px;
+}
+.menu-toggle {
+    display: none; /* Esconde o botão por padrão */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+
+    header ul{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 850px){
+    nav ul {
+        display: none; /* Esconde o menu na tela pequena */
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        width: 30%;
+        padding: 10px;
+        gap: 30px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    }
+
+    nav ul li a{
+        color: black;
+        padding: 0px;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra o menu quando ativado */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão de menu na tela pequena */
+    }
+    .contact-form {
+        margin: 0 auto;
+        margin-top: 60px;
+        background-color: #1E3A5F;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 90%;
+        
+    }
+    #about{
+        height: 600px;
+    }
+    .about h1{
+        margin-top: 20px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        min-height: 300px;
+        height: 350px;
+    }
+}
+@media (max-width: 850px){
+article{
+    min-height: 250px;
+}
+}
